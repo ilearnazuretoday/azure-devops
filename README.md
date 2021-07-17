@@ -33,7 +33,7 @@ Steps:
 
 ![Service Connection Step 1](media/service-connection.png  =500x)
 
-![Service Connection Step 2](media/service-connection2.png | width=300x)
+![Service Connection Step 2](media/service-connection2.png){width="300px"}
 
 ![Service Connection Step 3](media/service-connection3.png =300x)
 
