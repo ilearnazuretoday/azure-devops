@@ -98,7 +98,7 @@ steps:
 
 Change something in code in the [PWA Sample App Repo](https://GRD-EMEA@dev.azure.com/GRD-EMEA/Learning%20Azure/_git/create-static-pwa) and see pipeline trigger.
 
-- did the page got deployed to https://salearningazure.z6.web.core.windows.net/?
+- did the page got deployed to ...
 
 > You might need to do <kbd>Ctrl + F5</kbd> to refresh browser cache since this is PWA app
 
@@ -106,4 +106,4 @@ Change something in code in the [PWA Sample App Repo](https://GRD-EMEA@dev.azure
 
 ## Bonus Material
 
-This is not part of the training, but if you are interested in learning more about PWA web technology, check out [this presentation](https://fresenius-my.sharepoint.com/:p:/g/personal/piotr_zaniewski_fmc-ag_com/ESt0LX88G-hDmQoV87q-q5wBCypoabhwPLH9g77ehoW0fA?e=d9qOf8).
+This is not part of the training, but if you are interested in learning more about PWA web technology, check out ...
