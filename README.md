@@ -96,14 +96,14 @@ steps:
 
 ## Exercise
 
-Change something in code in the [PWA Sample App Repo](https://GRD-EMEA@dev.azure.com/GRD-EMEA/Learning%20Azure/_git/create-static-pwa) and see pipeline trigger.
+Change something in code in the [PWA Sample App Repo](https://github.com/Piotr1215/pwa-sample) and see pipeline trigger.
 
 - did the page got deployed to ...
 
 > You might need to do <kbd>Ctrl + F5</kbd> to refresh browser cache since this is PWA app
 
-- is there new content in $web container in **salearningazure** storage account?
+- is there new content in $web container in your storage account?
 
 ## Bonus Material
 
-This is not part of the training, but if you are interested in learning more about PWA web technology, check out ...
+This is not part of the training, but if you are interested in learning more about PWA web technology, check out [5 Options to deploy static web sites](https://itnext.io/5-static-websites-deployment-options-d0aac1570331)
