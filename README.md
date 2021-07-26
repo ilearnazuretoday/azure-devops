@@ -24,17 +24,17 @@ DevOps is a way to ensure **continuos, automated, uninterrupted flow of change**
 
 ## Pipelines as Code
 
-Steps:
+### Create service connection to allow deployment
 
-- create service connection to allow deployment
-
-![Service Connection Step 1](media/service-connection.png)
-
-![Service Connection Step 2](media/service-connection2.png)
-
-![Service Connection Step 3](media/service-connection3.png)
+<p float=left>
+ <img src="media/service-connection.png" width="300">
+ <img src="media/service-connection2.png" width="300">
+ <img src="media/service-connection3.png" width="200">
+</p>
 
 > Good practice is to narrow permissions scope!
+
+## How does a pipeline work
 
 - choose trigger (can be branch, tag, etc)
 - make sure to exclude files which you don't want to trigger the pipeline
