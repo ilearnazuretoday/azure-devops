@@ -2,7 +2,7 @@ resource "azurerm_resource_group" "main" {
   name     = "rg-${var.project_abbrev}-${local.region_abbrev}-${local.environment_abbrev}"
   location = var.location
 }
-resource "azurerm_storage_account" "name" {
+resource "azurerm_storage_account" "main" {
   name                     = "salearningazuredevops"
   resource_group_name      = azurerm_resource_group.main.name
   location                 = var.location
