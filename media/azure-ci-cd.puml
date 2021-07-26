@@ -4,23 +4,34 @@ hide footbox
 !theme materia
 
 collections "Source Code" as code
-box "Continous Integration <&queue>"
+
+box "Continous Integration"
 [-> Build : trigger CI/CD pipeline
 activate Build
-Build -> Artifacts : create artifacts
+Build -> Artifacts : create
 deactivate Build
 end box
+
 box "Continous Delivery"
-"Artifacts" -> "Artifacts Store" : store artifacts
+"Artifacts" -> "Artifacts Store" : store
 end box
+
 note over "Artifacts Store"
 Artifacts can be anything produced by buld process, for example:
 - binaries hosted in Azure Artifacts, Artifactory etc
 - docker images hosted in Azure Container Registry
 - else we want to release, like documents, etc
 end note
+
 box "Continous Deployment \n& Release"
-"Artifacts Store" -> "Hosting Environment" : Deploy
-"Hosting Environment" -> "Release" : use feature \ntoggles to control releases
+"Artifacts Store" -> "Hosting Environment" : deploy
+activate "Hosting Environment"
+"Hosting Environment" -> "Release" : release
+deactivate "Hosting Environment"
 end box
+
+note over "Release"
+You can use use feature
+toggles to control releases
+end note
 @enduml

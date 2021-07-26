@@ -13,6 +13,26 @@ DevOps is a way to ensure **continuos, automated, uninterrupted flow of change**
 
 ![AzureDevOps Components](media/azdev-components.png)
 
+For in-depth review of all services, please refer to official [Azure DevOps Documentation](https://docs.microsoft.com/en-us/azure/devops/user-guide/services?view=azure-devops).
+
+## Sign Up for Azure DevOps
+
+There are many ways to sing up for Azure DevOps. Today we are going to use GitHub integration. Please follow steps [outlined here](https://docs.microsoft.com/en-us/azure/devops/user-guide/sign-up-invite-teammates?toc=%2Fazure%2Fdevops%2Fget-started%2Ftoc.json&bc=%2Fazure%2Fdevops%2Fget-started%2Fbreadcrumb%2Ftoc.json&view=azure-devops#sign-up-with-a-github-account) to setup the Azure DevOps service.
+
+https://docs.microsoft.com/en-us/azure/devops/user-guide/plan-your-azure-devops-org-structure?bc=%2Fazure%2Fdevops%2Fget-started%2Fbreadcrumb%2Ftoc.json&toc=%2Fazure%2Fdevops%2Fget-started%2Ftoc.json&view=azure-devops#what-is-an-organization
+
+Each organization gets its own free tier of services (up to five users for each service type) as follows. You can use all the services, or choose just what you need to complement your existing workflows.
+
+Azure Pipelines: One hosted job with 1,800 minutes per month for CI/CD and one self-hosted job
+Azure Boards: Work item tracking and Kanban boards
+Azure Repos: Unlimited private Git repos
+Azure Artifacts: Package management
+Unlimited Stakeholders
+Five Azure DevOps users (Basic)
+Free tier of Microsoft-hosted CI/CD (one concurrent job, up to 30 hours per month)
+2 GiB of Azure Artifacts storage
+One self-hosted CI/CD concurrent job
+
 ## Resources
 
 - [Introduction to DevOps](https://fresenius-my.sharepoint.com/:p:/g/personal/piotr_zaniewski_fmc-ag_com/Eb10-BtKgd1Hn2m8_gzaLVkBVeEOT84sEKfSHE_LFPgTjQ?e=OyOZPW)
@@ -22,7 +42,25 @@ DevOps is a way to ensure **continuos, automated, uninterrupted flow of change**
 
 ![CI CI Process](http://www.plantuml.com/plantuml/proxy?cache=yes&src=https://raw.githubusercontent.com/ilearnazuretoday/azure-devops/master/media/azure-ci-cd.puml&fmt=png)
 
+Let's take a closer look at what is happening on the diagram and map it to Azure DevOps components.
+
+Parts that are not depicted on the diagram are how the work gets assigned to a developer, here is one common scenario from a SCRUM Process.
+
+In Azure DevOps work comes from [User Stories](https://docs.microsoft.com/en-us/azure/devops/boards/work-items/agile-glossary?view=azure-devops#user-story) refined from PBIs  which stands for [Product Backlog Item](https://docs.microsoft.com/en-us/azure/devops/boards/work-items/agile-glossary?view=azure-devops#product-backlog-item), so let's assume that this is also the case here.
+
+Once a developer starts working on a user story, they will usually create a separate branch, often called [Feature Branch](https://docs.microsoft.com/en-us/azure/devops/repos/git/git-branching-guidance?view=azure-devops#use-feature-branches-for-your-work) and connect it with the User Story.
+
+From this point, the diagram provides a high level overview of a generic CI/CD pipeline.
+
+This is of course a very simplistic pipeline, in real-life scenarios, pipelines are usually much more elaborate. Here is an example of a more mature pipeline:
+
+![example pipeline](media/pipeline-example.png)
+
 ## Pipelines as Code
+
+Traditionally pipelines in Azure DevOps and its predecessor Team Foundation Service (TFS) were created and managed via GUI. One of the main reasons, why this was a "click-based" process was the fact that Dev and Ops teams were separate silos.
+
+The beginning of [DevOps](https://devopedia.org/devops) movement and [Shift Left](https://devopedia.org/shift-left) philosophy called for inventing new ways of describing build, deployment and infrastructure requirements. Developers should be fully empowered to design and execute pipelines. Based on those requirements [Pipelines as Code](https://www.jenkins.io/doc/book/pipeline-as-code/) were introduced.
 
 ### Create service connection to allow deployment
 
