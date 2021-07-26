@@ -17,11 +17,10 @@ DevOps is a way to ensure **continuos, automated, uninterrupted flow of change**
 
 - [Introduction to DevOps](https://fresenius-my.sharepoint.com/:p:/g/personal/piotr_zaniewski_fmc-ag_com/Eb10-BtKgd1Hn2m8_gzaLVkBVeEOT84sEKfSHE_LFPgTjQ?e=OyOZPW)
 - [Azure DevOps Documentation](https://azure.microsoft.com/en-us/overview/what-is-devops/)
-- [DevOps Project Tour - Sunstone](https://dev.azure.com/GRD-EMEA/Sunstone)
 
 ## CI/CD
 
-![Quick CI/CD Overview](media/artifacts.png)
+![MKE Architecture](http://www.plantuml.com/plantuml/proxy?cache=yes&src=https://raw.githubusercontent.com/Piotr1215/dca-prep-kit/master/media/azure-ci-cd.puml&fmt=svg)
 
 ## Pipelines as Code
 
@@ -33,7 +32,7 @@ Steps:
 
 ![Service Connection Step 1](media/service-connection.png  =500x)
 
-![Service Connection Step 2](media/service-connection2.png){width="300px"}
+![Service Connection Step 2](media/service-connection2.png =500x)
 
 ![Service Connection Step 3](media/service-connection3.png =300x)
 
