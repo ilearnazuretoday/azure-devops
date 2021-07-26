@@ -20,7 +20,7 @@ DevOps is a way to ensure **continuos, automated, uninterrupted flow of change**
 
 ## CI/CD
 
-![MKE Architecture](http://www.plantuml.com/plantuml/proxy?cache=yes&src=https://raw.githubusercontent.com/Piotr1215/dca-prep-kit/master/media/azure-ci-cd.puml&fmt=svg)
+![CI CI Process](http://www.plantuml.com/plantuml/proxy?cache=yes&src=https://raw.githubusercontent.com/ilearnazuretoday/azure-devops/master/media/azure-ci-cd.puml&fmt=svg)
 
 ## Pipelines as Code
 
