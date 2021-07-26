@@ -28,13 +28,11 @@ Steps:
 
 - create service connection to allow deployment
 
-> Service for demo is already created, this is just a procedure showing how to create one
+![Service Connection Step 1](media/service-connection.png)
 
-![Service Connection Step 1](media/service-connection.png  =500x)
+![Service Connection Step 2](media/service-connection2.png)
 
-![Service Connection Step 2](media/service-connection2.png =500x)
-
-![Service Connection Step 3](media/service-connection3.png =300x)
+![Service Connection Step 3](media/service-connection3.png)
 
 > Good practice is to narrow permissions scope!
 
