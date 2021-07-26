@@ -3,5 +3,5 @@ output "storage_account_name" {
 }
 
 output "static_website_address" {
-  value = data.azurerm_storage_account.main.primary_web_host
+  value = azurerm_storage_account.main.primary_web_host
 }
